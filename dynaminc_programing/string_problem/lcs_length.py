@@ -1,5 +1,5 @@
-x = "AGGTAB"
-y = "GXTXAYB"
+x = "ABCDGH"
+y = "ACDGHR"
 
 n = len(x)
 m = len(y)

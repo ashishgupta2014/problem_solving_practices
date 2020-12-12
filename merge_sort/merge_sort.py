@@ -22,13 +22,9 @@ def merge(left, right):
         else:
             arr.append(left[i])
             i += 1
-    while j < len(right):
-        arr.append(right[j])
-        j += 1
-    while i < len(left):
-        arr.append(left[i])
-        i += 1
+    arr += right[j:]
+    arr += left[i:]
     return arr
 
-
-print(divide([4, 5, 6, 1, 0, 3]))
+arr = list(map(int, '5 2 4 1 3 5'.split()))
+print(divide(arr))

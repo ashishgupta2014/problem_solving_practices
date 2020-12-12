@@ -23,6 +23,8 @@ def maxHeight(wallPositions, wallHeights):
     :return:
     """
     n = len(wallPositions)
+    if n != len(wallHeights):
+        return 0
     maxheight = 0
     for i in range(n-1):
         heightDiff  = abs(wallHeights[i + 1] - wallHeights[i])
@@ -33,7 +35,8 @@ def maxHeight(wallPositions, wallHeights):
             localMax = low + remainingGap // 2
         else:
             localMax = min(wallHeights[i + 1], wallHeights[i]) + gapLen
-        maxheight = max(maxheight, localMax)
+        if gapLen:
+            maxheight = max(maxheight, localMax)
 
     return maxheight
-print(maxHeight([1, 10],  [1, 5]))
+print(maxHeight([4, 5, 6, 9, 10, 11, 12, 13, 14],  [20, 22, 11, 14, 14, 21, 19, 14, 23]))
