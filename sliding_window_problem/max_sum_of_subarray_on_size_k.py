@@ -1,6 +1,19 @@
 def solve(arr, k):
     """
     https://practice.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1
+
+    Given an array of integers Arr of size N and a number K. Return the maximum sum of a subarray of size K.
+
+    Example 1:
+
+    Input:
+    N = 4, K = 2
+    Arr = [100, 200, 300, 400]
+    Output:
+    700
+    Explanation:
+    Arr3  + Arr4 =700,
+    which is maximum.
     :param arr:
     :param k:
     :return:
