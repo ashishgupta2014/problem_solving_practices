@@ -23,4 +23,4 @@ def partiotion(s):
     makePartitions([], s)
     return result
 
-partiotion('aab')
+print(partiotion('aab'))

@@ -20,7 +20,7 @@ def lcs_top_down(string1, string2):
                 # if we want sub sequence of two string with break allowed
                 dp[i][j] = max(dp[i][j-1], dp[i-1][j])
     return dp[n][m]
-print(lcs_top_down('a', 'bcd'))
+print(lcs_top_down('ab', 'bcd'))
 
 
 def isSubSequence(str1, str2):
@@ -54,4 +54,4 @@ def isSubSequence(str1, str2):
     # If all characters of str1 matched, then j is equal to m
     return j == m
 
-print(isSubSequence('a', 'bcd'))
+print(isSubSequence('ab', 'bcd'))
