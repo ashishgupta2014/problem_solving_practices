@@ -24,6 +24,7 @@ def lps_top_down(x, n):
             else:
                 # if we want sub sequence of two string with break allowed
                 dp[i][j] = max(dp[i][j-1], dp[i-1][j])
+    print(dp)
     return dp[n][m]
 
 print(lps_top_down(x, n))
