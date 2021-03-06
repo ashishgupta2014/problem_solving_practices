@@ -64,7 +64,7 @@ def cutRod2(price, n):
     # and compare different configurations
     for i in range(0, n):
         max_val = max(max_val, price[i] +
-                      cutRod(price, n - i - 1))
+                      cutRod2(price, n - i - 1))
     return max_val
 
 
